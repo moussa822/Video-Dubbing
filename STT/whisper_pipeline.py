@@ -114,7 +114,7 @@ def load_model(model_name="deepdml/faster-whisper-large-v3-turbo-ct2"):
                   device=device,
                   compute_type=compute_type,
               )
-  token = os.getenv("HF_AUTH_TOKEN", "TOKEN_HERE")
+  token = os.getenv("HF_AUTH_TOKEN", "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")
   try:
     diarization_model = PyannotePipeline.from_pretrained(
               "pyannote/speaker-diarization-3.1",
